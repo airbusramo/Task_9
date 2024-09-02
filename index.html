@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Adding -- Miltiplying -- and dividing 3 values</h1>
+    <hr>
+
+    <p>Sum of the 3 values: <span id="sumP"></span></p>
+    <p>Multiplication of the 3 values: <span id="multP"></span></p>
+    <p>Division of the 3 values: <span id="divP"></span></p>
+    <script>
+        var numArray=[];
+
+        var num1;
+        var num2;
+        var num3;
+        var sumP;
+        var multP;
+        var divP;
+
+        num1 = Number(prompt("Enter first number:"));
+        numArray.push(num1);
+
+        num2 = Number(prompt("Enter second number:"));
+        numArray.push(num2);
+
+        num3 = Number(prompt("Enter third number:"));
+        numArray.push(num3);
+
+        sumP = num1 + num2 + num3;
+        multP = num1 * num2 * num3;
+        divP = num1 / num2 / num3;
+
+        document.getElementById("sumP").innerHTML = num1 + " + " + num2 + " + " + num3 + " = " + sumP;
+        document.getElementById("multP").innerHTML = num1 + " * " + num2 + " * " + num3 + " = " + multP;
+        document.getElementById("divP").innerHTML = num1 + " / " + num2 + " / " + num3 + " = " + divP;
+    </script>
+</body>
+</html>
